@@ -1,5 +1,6 @@
 #include "sensor-validate.h"
 
+int numOfValues;
 int lastButOneIndex = numOfValues - 1;
 int _give_me_a_good_name(double value, double nextValue, double maxDelta) {
   if(nextValue - value > maxDelta) {
