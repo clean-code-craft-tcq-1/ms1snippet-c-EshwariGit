@@ -1,12 +1,12 @@
 #include "sensor-validate.h"
 
 int lastButOneIndex;
-double* nextValue;
+double* value;
 
 /* FUNCTION TO CHECK IF THE POINTER VALUE IS NULL*/
-int funcpointercalc(double* nextValue)
+int funcpointercalc(double* value)
 {
-if(nextValue != NULL)
+if(value != NULL)
 {
    return 0 ;
 }
