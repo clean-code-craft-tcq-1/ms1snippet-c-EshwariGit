@@ -3,6 +3,7 @@
 #include "test/catch.hpp"
 #include "sensor-validate.h"
 
+
 TEST_CASE("reports error when soc jumps abruptly") {
   double socReadings[] = {0.0, 0.01, 0.5, 0.51};
   int numOfSocReadings = sizeof(socReadings) / sizeof(socReadings[0]);
@@ -17,6 +18,6 @@ TEST_CASE("reports error when current jumps abruptly") {
 
 // Testcase to check NULL function pointers.
 TEST_CASE("reports error when function pointers are NULL") {
-  double currentReadings[] = {};
-    REQUIRE(funcpointercalc(currentReadings) == 1  );
+  double currentReadings[] = !NULL;
+    REQUIRE(funcpointercalc(currentReadings) == 0  );
 }
