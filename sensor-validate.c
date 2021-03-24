@@ -6,7 +6,7 @@ double* nextValue;
 
 int funcpointercalc(double* nextValue)
 {
-if(nextValue == NULL)
+if(nextValue != NULL)
 {
   return 0;
 }
