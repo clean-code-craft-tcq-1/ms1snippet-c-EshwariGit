@@ -1,6 +1,20 @@
 #include "sensor-validate.h"
 
 int lastButOneIndex;
+double* nextValue;
+
+int funcpointercalc(double* nextValue)
+{
+if(nextValue == NULL)
+{
+  return 0;
+}
+else
+{
+    return 1;
+}
+  
+}
 int IndexCalculator( int numOfValues)
 {
   lastButOneIndex = numOfValues - 1;
