@@ -18,6 +18,6 @@ TEST_CASE("reports error when current jumps abruptly") {
 
 // Testcase to check NULL function pointers.
 TEST_CASE("reports error when function pointers are NULL") {
-  double currentReadings[] = !NULL;
+  double currentReadings[] = {NULL};
     REQUIRE(funcpointercalc(currentReadings) == 0  );
 }
