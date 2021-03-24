@@ -1,3 +1,4 @@
+#include <cstddef>
 
 int toleranceRangeValidation(double value, double nextValue, double maxDelta);
 int funcpointercalc(double* nextValue);
