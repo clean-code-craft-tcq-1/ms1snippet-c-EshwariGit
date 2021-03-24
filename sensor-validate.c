@@ -1,5 +1,4 @@
 #include "sensor-validate.h"
-#include <cstddef>
 
 int lastButOneIndex;
 double* nextValue;
