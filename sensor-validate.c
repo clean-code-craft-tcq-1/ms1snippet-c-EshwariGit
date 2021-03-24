@@ -13,7 +13,7 @@ int _give_me_a_good_name(double value, double nextValue, double maxDelta) {
 }
 
 int validateSOCreadings(double* values, int numOfValues) {
-  IndexCalculator(numOfValues);
+  IndexCalculator(int numOfValues);
   for(int i = 0; i < lastButOneIndex; i++) {
     if(!_give_me_a_good_name(values[i], values[i + 1], 0.05)) {
       return 0;
@@ -23,7 +23,7 @@ int validateSOCreadings(double* values, int numOfValues) {
 }
 
 int validateCurrentreadings(double* values, int numOfValues) {
-  IndexCalculator(numOfValues);
+  IndexCalculator(int numOfValues);
   for(int i = 0; i < lastButOneIndex; i++) {
     if(!_give_me_a_good_name(values[i], values[i + 1], 0.1)) {
       return 0;
