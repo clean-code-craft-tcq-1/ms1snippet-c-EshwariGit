@@ -4,6 +4,7 @@
 int lastButOneIndex;
 double* nextValue;
 
+/* FUNCTION TO CHECK IF THE POINTER VALUE IS NULL*/
 int funcpointercalc(double* nextValue)
 {
 if(nextValue != NULL)
@@ -16,11 +17,15 @@ else
 }
   
 }
+
+/* FUNCTION TO CALCULATE THE INDEX TO AVOID DUPLICATION*/
 int IndexCalculator( int numOfValues)
 {
   lastButOneIndex = numOfValues - 1;
   return lastButOneIndex;
 }
+
+/*FUNCTION RENAMED TO VALIDATE TOLERANCE RANGE*/
 int toleranceRangeValidation(double value, double nextValue, double maxDelta) {
   if(nextValue - value > maxDelta) {
     return 0;
