@@ -6,14 +6,7 @@ double* nextValue;
 /* FUNCTION TO CHECK IF THE POINTER VALUE IS NULL*/
 int funcpointercalc(double* nextValue)
 {
-if(nextValue != NULL)
-{
-  return 0;
-}
-else
-{
-    return 1;
-}
+if(nextValue != NULL) ? return 0 : return 1 ;
   
 }
 
